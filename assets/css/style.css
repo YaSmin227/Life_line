@@ -227,8 +227,10 @@ form.banner-form {
   font-weight: 600;
   color: #aaa;
   margin: 5px;
+  transition: border-bottom 0.5s ease-in-out;
 }
- /* .nav-tabs .nav-link:hover{
+
+/* .nav-tabs .nav-link:hover{
   border-color: transparent !important;
  } */
 .banner-form .nav-tabs button:hover {
@@ -239,7 +241,10 @@ form.banner-form {
 
 .banner-form .nav-tabs button:focus {
   outline: none !important;
-  border: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+
 }
 
 .banner-form .nav-tabs .nav-link.active,
@@ -2080,12 +2085,22 @@ aside,
   border-radius: 50%;
 }
 
-.content .carousel .carousel-item.active{
+.content .carousel .carousel-item.active {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100% !important;
 }
- .content .carousel .carousel-inner{
+
+.content .carousel .carousel-item {
+  text-align: center;
+}
+
+.carousel-item h5 {
+  line-height: 250px;
+  margin: 0;
+}
+
+.content .carousel .carousel-inner {
   height: 100%;
- }
+}
