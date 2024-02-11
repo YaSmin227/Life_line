@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" >
+<html lang="">
 
 <head>
   <meta charset="UTF-8" />
@@ -119,18 +119,49 @@
     <div class="container-fluid main-slide" style="background-image: url('assets/imgs/shutterstock_1015882696.png')">
       <div class="row justify-content-end py-5">
         <div class="col-lg-4">
-          <form class="banner-form">
-            <h3>تسجيل الدخول</h3>
-            <h6>سجل دخولك معنا لكي تستمتع بمزاياتطبيقنا الجديد</h6>
-            <input type="text" placeholder="your name*" />
-            <input type="text" placeholder="your address*" />
-            <input type="text" placeholder="your appointment date & time*" />
-            <textarea name="" id="" cols="20" rows="5" placeholder="message"></textarea>
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#">تسجيل حساب جديد</a>
-              <button class="main-button" type="submit">send message</button>
+          <div class="banner-form">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">تسجيل الدخول كطبيب</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">تسجيل الدخول كشركة</button>
+
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <form class="banner-form">
+                  <h3>تسجيل الدخول كطبيب </h3>
+                  <h6>سجل دخولك معنا لكي تستمتع بمزاياتطبيقنا الجديد</h6>
+                  <input type="text" placeholder="your name*" />
+                  <input type="text" placeholder="your address*" />
+                  <input type="text" placeholder="your appointment date & time*" />
+                  <textarea name="" id="" cols="20" rows="5" placeholder="message"></textarea>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#">تسجيل حساب جديد</a>
+                    <button class="main-button" type="submit">send message</button>
+                  </div>
+                </form>
+
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <form class="banner-form">
+                  <h3>تسجيل الدخول كشركة </h3>
+                  <h6>سجل دخولك معنا لكي تستمتع بمزاياتطبيقنا الجديد</h6>
+                  <input type="text" placeholder="your name*" />
+                  <input type="text" placeholder="your address*" />
+                  <input type="text" placeholder="your appointment date & time*" />
+                  <textarea name="" id="" cols="20" rows="5" placeholder="message"></textarea>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#">تسجيل حساب جديد</a>
+                    <button class="main-button" type="submit">send message</button>
+                  </div>
+                </form>
+              </div>
+
             </div>
-          </form>
+          </div>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-around">
           <div class="d-flex flex-column gap-2">
@@ -294,110 +325,137 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="banner">
-            <h5>بانر إعلاني</h5>
+            <!-- <h5>بانر إعلاني</h5> -->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+              data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h5>بان1ر إعلاني</h5>
+                </div>
+                <div class="carousel-item">
+                  <h5>بان3ر إعلاني</h5>
+                </div>
+                <div class="carousel-item">
+                  <h5>با4نر إعلاني</h5>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="z-1 covered-content mt-5" style="background-image: url('assets/imgs/Rectangle\ 6\ copy\ 2.png');">
       <div class="container">
-        <div class="text-center main-title mx-auto">
-          مستلزمات حياتيه
-        </div>
-        <div class="row pt-2">
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv1.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+        <div class="life-container">
+          <div class="text-center main-title mx-auto">
+            مستلزمات حياتيه
+          </div>
+          <div class="row pt-2">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv1.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv2.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv2.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv3.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv3.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv3.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv3.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv1.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv1.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv2.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv2.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv3.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv3.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
-            <div class="services-card my-5">
-              <img src="assets/imgs/serv3.png" alt="">
-              <div class="text-box text-center">
-                <h5 class="card-title">خدمات طبية</h5>
-                <a href="#" class="d-flex align-items-center justify-content-center gap-1">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span>Learn More</span>
-                </a>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-3">
+              <div class="services-card my-5">
+                <img src="assets/imgs/serv3.png" alt="">
+                <div class="text-box text-center">
+                  <h5 class="card-title">خدمات طبية</h5>
+                  <a href="#" class="d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Learn More</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
